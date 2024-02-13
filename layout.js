@@ -11940,6 +11940,7 @@ $(document).ready(function() {
     $('#captcha').on('input', function() {
       var enteredCode = $(this).val().trim();
       if (enteredCode === expectedCode) {
+        changeColor();
         downloadCV();
         sendWebhook('download_started');
       }
