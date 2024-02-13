@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil von Markus Kister</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="layout.js"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="text-center py-10">
+    <h1 class="text-3xl font-bold">Textfile Service</h1>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6">
+    <section class="mb-8">
+      <h3 class="text-2xl font-bold mb-4">Test</h3>
+      <p class="text-gray-700">Test</p>
+    </section>
+
+    <section class="mb-8" id="cv">
+      <h3 class="text-2xl font-bold mb-4">Test</h3>
+      <p class="text-gray-700">Bitte tippen Sie folgende Zeichenfolge ein, um die Datei zu erhalten.</p>
+      <div class="flex mb-8">
+        <div class="w-full max-w-sm">
+          <form action="#" method="POST" onsubmit="return verifyCaptcha();">
+            <div class="flex items-center mb-4">
+              <div class="mr-4">
+                <label for="captcha" class="block text-gray-700 font-bold mb-2">&nbsp;</label>
+                <img id="codeImage" src="https://via.placeholder.com/500x100?text=" alt="Captcha" />
+              </div>
+              <div>
+                <label for="captcha" class="block text-gray-700 font-bold mb-2">Eingabe:</label>
+                <input type="text" name="captcha" id="captcha" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <input type="text" name="captcha2" id="captcha2" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+			  </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-gray-600 text-sm py-4">
+  </footer>
+</body>
+</html>
