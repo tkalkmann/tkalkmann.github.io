@@ -4042,7 +4042,7 @@ $(document).ready(function() {
     }
 
     var expectedCode = generateRandomCode();
-    $('#codeImage').attr('src', 'https://via.placeholder.com/500x100?text=' + expectedCode);
+    $('#codeImage').attr('src', 'https://placehold.co/500x100?text=' + expectedCode);
     
     $('#captcha').on('input', function() {
       var enteredCode = $(this).val().trim();
